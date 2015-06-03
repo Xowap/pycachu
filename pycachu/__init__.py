@@ -159,6 +159,7 @@ class Pycachu(object):
         try:
             f = open(path, 'wb')
             fcntl.lockf(f, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            return f
         except IOError as err:
             if err.errno != errno.ENOENT:
                 return None
