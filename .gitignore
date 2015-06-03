@@ -5,3 +5,5 @@
 *.pyc
 dist
 test.py
+build
+MANIFEST
