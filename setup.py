@@ -3,12 +3,9 @@
 #
 # (c) 2015 ActivKonnect
 
-from __future__ import unicode_literals
-
-
 import os
 import codecs
-from setuptools import setup
+from distutils.core import setup
 
 
 with codecs.open(os.path.join(os.path.dirname(__file__), 'README.rst'), 'r') as readme:
@@ -18,7 +15,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='pycachu',
-    version='0.1.0',
+    version='0.1.1',
     packages=['pycachu'],
     include_package_data=True,
     license='WTFPL',
